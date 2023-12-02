@@ -1,4 +1,5 @@
 import pandas as pd
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
 
 """Converts datatype in one column into a datatime and one into timedelta"""
 def column_datetime_timedelta(df, date_column, td_column):
@@ -28,3 +29,19 @@ def split_OHE(df, conditions):
     OHE_df = OHE_df.fillna(0).astype(int)
 
     return OHE_df
+
+"""Generate evaluation metrics for Classification models"""
+def eval_metrics(model, predict, y_true, x_test):
+    accuracy = accuracy_score(y_true, predict)
+    precision = precision_score(y_true, predict, pos_label='Buy/Hold')
+    recall = recall_score(y_true, predict, pos_label='Buy/Hold')
+    f1 = f1_score(y_true, predict, pos_label='Buy/Hold')
+    roc_auc = roc_auc_score(y_true, model.predict_proba(x_test)[:, 1])
+    
+    return accuracy, precision, recall, f1, roc_auc
+
+def pos_neg_return(returns):
+    if returns >=0:
+        return "Buy/Hold"
+    else:
+        return "Sell"
