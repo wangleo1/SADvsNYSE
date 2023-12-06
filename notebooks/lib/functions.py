@@ -31,11 +31,11 @@ def split_OHE(df, conditions):
     return OHE_df
 
 """Generate evaluation metrics for Classification models"""
-def eval_metrics(model, predict, y_true, x_test):
+def eval_metrics(model, predict, y_true, x_test, pos_label):
     accuracy = accuracy_score(y_true, predict)
-    precision = precision_score(y_true, predict, pos_label='Buy/Hold')
-    recall = recall_score(y_true, predict, pos_label='Buy/Hold')
-    f1 = f1_score(y_true, predict, pos_label='Buy/Hold')
+    precision = precision_score(y_true, predict, pos_label = pos_label)
+    recall = recall_score(y_true, predict, pos_label = pos_label)
+    f1 = f1_score(y_true, predict, pos_label = pos_label)
     roc_auc = roc_auc_score(y_true, model.predict_proba(x_test)[:, 1])
     
     return accuracy, precision, recall, f1, roc_auc
