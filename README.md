@@ -1,4 +1,4 @@
-# SADvsNYSE
+# Seasonal Affective Disorder & NYSE Returns
 ## Overview
 This repository contain data, images and models which investigate the relationship between Seasonal Affective Disorder (SAD) and stock market returns within the Northern Hemisphere. Taking inspirations from the 2001 research paper [Winter Blues: Seasonal Affective Disorder (SAD) and Stock Market Returns](http://qed.econ.queensu.ca/faculty/mackinnon/econ872/papers/kamstra-kramer-levi.pdf), this research project seeks detail the unlikely relationship between the two variables and attempts the further the discoveries by creating the preliminary frameworks for a trading algorithm.
 ## Table of Contents
@@ -19,8 +19,19 @@ Conversely,
 - variance of returns
 
 ### Findings
-- negative relationship
-- linear regression
+- Negative relationship between average monthly Returns and Hours of Sunlight
+    - Following the Summer Solstice in June/July, days begin to shorten, resulting in fewer hours of sunlight
+        - As hours of sunlight decrease, market returns begin to rise
+    - Following the Winter Solstice in late Dec, days become longer
+        - As hours of sunlight increase, market returns gradually decline
+
+- Months with fewer HOS in which SAD takes full effect, investor behaviour begins to alter towards risk aversion, requiring higher returns on investment to justify holding risky securities
+
+- During months with greater HOS, investors become riskier meaning they are unbothered by the presence of risky securities within their portfolios
+    - Optimism results in the acceptance of potentially lower/negative returns in hopes of future portfolio appreciation
+
+ ![returns_vs_HOS](images/returns_HOS.png)   
+
 
 ## Machine Learning Models
 
