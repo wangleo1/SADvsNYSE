@@ -49,7 +49,7 @@ UML techniques had been implemented to examine the differences in market returns
     - The 'Elbow Method' was used to calculate the optimal number of clusters
         - k = 3
 -   
-![cluster_table](file:///C:/Users/l3onw/OneDrive/Pictures/table.png)   
+![cluster_table](images/table.png)   
 
 ### Classification 
 
