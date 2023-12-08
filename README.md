@@ -50,10 +50,8 @@ Depressed investors suffering from SAD will experience higher risk aversion, shi
     - Following the Winter Solstice in late Dec, days become longer
         - As hours of sunlight increase, market returns gradually decline
 - Months with fewer HOS in which SAD takes full effect, investor behaviour begins to alter towards risk aversion, requiring higher returns on investment to justify holding risky securities
-
 - During months with greater HOS, investors become riskier meaning they are unbothered by the presence of risky securities within their portfolios
     - Optimism results in the acceptance of potentially lower/negative returns in hopes of future portfolio appreciation
-
  ![returns_vs_HOS](images/returns_HOS.png)   
 
  __Note:__ Removing outliers mitigates the "January Effect" - the annual fall and subsequent rise of security markets during December and January respectively. A practice adopted by many corporations in which the firms sell-off all 'losing' investments for taxation purposes, later repurchasing at the beginning of the next fiscal year.
