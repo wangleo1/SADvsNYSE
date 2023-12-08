@@ -10,7 +10,12 @@ The following are key points/takeaways from the hyperlinked research paper:
 - Studies have shown a clear correlation between emotion and risk preferences
     - People experiencing depression tend to be much more risk averse, behaving in a manner which minimizes any form of risk 
 
-Conversely, 
+- Within financial trading, there is a positive correlation between risk and reward
+    - Taking bigger risks raises the potential for greater returns/gains
+
+__Hypothesis:__
+Depressed investors suffering from SAD will experience higher risk aversion, shifting their attention away from risky securities, including stock, thereby resulting in lower average market returns during the winter/fall months
+
 ## Data Overview
 
 ## Exploratory Data Analysis
@@ -32,6 +37,8 @@ Conversely,
 
  ![returns_vs_HOS](images/returns_HOS.png)   
 
+ __Note:__ Removing outliers mitigates the "January Effect" 
+
 
 ## Machine Learning Models
 
@@ -39,14 +46,15 @@ Conversely,
 What if hours of sunlight was not the only trigger of seasonal depression? 
 UML techniques had been implemented to examine the differences in market returns between different types of days
 - Kmeans clustering had been used to seperate trading days based soley on weather conditions
-- The 'Elbow Method' was used to calculate the optimal number of clusters
-    - k = 3
+    - The 'Elbow Method' was used to calculate the optimal number of clusters
+        - k = 3
 - 
--
+![cluster_table](C:\Users\l3onw\OneDrive\Pictures\table.png)   
+
 ### Classification 
 
-
 ### Future Development
-- apply similar analysis to data within the souther hemisphere due to inversed daylight cycles
-- further hyperparameter tuning of classification model to increase accuracy and further reduce false positives
+- Apply EDA process and models on data within the Southern Hemisphere to see if correlations still hold true
+    - Inversed daylight cycles in the Southern Hemisphere
+- Further hyperparameter tuning of classification model to increase accuracy and further reduce false positives
 - With refined classification model, develop and implement a trading algorithm, tracking performance 
