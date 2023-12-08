@@ -48,7 +48,7 @@ UML techniques had been implemented to examine the differences in market returns
 - Kmeans clustering had been used to seperate trading days based soley on weather conditions
     - The 'Elbow Method' was used to calculate the optimal number of clusters
         - k = 3
--  
+-   
 ![cluster_table](file:///C:/Users/l3onw/OneDrive/Pictures/table.png)   
 
 ### Classification 
