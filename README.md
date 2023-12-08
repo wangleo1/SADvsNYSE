@@ -9,7 +9,6 @@ The following are key points/takeaways from the hyperlinked research paper:
     - Depression triggered by seasonal changes
 - Studies have shown a clear correlation between emotion and risk preferences
     - People experiencing depression tend to be much more risk averse, behaving in a manner which minimizes any form of risk 
-
 - Within financial trading, there is a positive correlation between risk and reward
     - Taking bigger risks raises the potential for greater returns/gains
 
